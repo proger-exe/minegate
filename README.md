@@ -1,7 +1,7 @@
 # MineGate Plugin
 
 <!-- portfolio-card:start -->
-[![sh3lby.code — нейтральная обложка](docs/portfolio/card.png)](docs/portfolio/card.svg)
+[![MineGate — Один разговор по обе стороны сервера.](docs/portfolio/card.png)](docs/portfolio/card.svg)
 <!-- portfolio-card:end -->
 
 Telegram ↔ Minecraft Bridge Plugin for Paper 1.21+
