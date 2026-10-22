@@ -1,5 +1,9 @@
 # MineGate Plugin
 
+<!-- portfolio-card:start -->
+[![MineGate — Один разговор по обе стороны сервера.](docs/portfolio/card.png)](docs/portfolio/card.svg)
+<!-- portfolio-card:end -->
+
 Telegram ↔ Minecraft Bridge Plugin for Paper 1.21+
 
 ## Описание
