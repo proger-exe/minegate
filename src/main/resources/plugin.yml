@@ -1,0 +1,6 @@
+name: MineGate
+version: '${project.version}'
+main: dev.sh3lby.minegate.MineGatePlugin
+api-version: '1.21'
+author: sh3lby.code
+description: Telegram ↔ Minecraft Bridge Plugin

@@ -1,0 +1,57 @@
+telegram:
+  token: "<BOT_TOKEN>"
+  chat-id: "<CHAT_ID>"
+  poll-timeout-seconds: 20
+
+bridge:
+  enabled: true
+  read-only: false
+  cooldown-ms: 1000
+  max-message-length: 220
+  # Поддержка цветовых кодов через & (например, &aзелёный, &cкрасный)
+  # При отправке в Telegram цвета удаляются, в Minecraft отображаются
+  enable-color-codes: true
+
+reply:
+  enabled: true
+  max-age-seconds: 3600
+
+events:
+  join: true
+  quit: true
+  death: true
+  server: true
+
+formats:
+  # Формат сообщений из Minecraft в Telegram
+  # Доступные переменные: {player} - имя игрока, {message} - текст сообщения
+  minecraft-to-telegram: "⛏ {player}: {message}"
+  
+  # Формат сообщений из Telegram в Minecraft
+  # Доступные переменные: {name} - имя пользователя Telegram, {message} - текст сообщения
+  telegram-to-minecraft: "[TG] {name}: {message}"
+  
+  # Формат системных сообщений
+  # Доступные переменные: {message} - текст сообщения
+  system-message: "⚙ {message}"
+  
+  # Формат индикатора reply (используется внутри reply-формата)
+  # Доступные переменные: {player} - имя игрока, на чьё сообщение отвечают
+  reply-indicator: "[в ответ {player}]"
+  
+  # Формат сообщения с reply-контекстом
+  # Доступные переменные: {telegramName} - имя пользователя Telegram, {replyIndicator} - индикатор reply, {message} - текст сообщения
+  reply-format: "@{telegramName} {replyIndicator}: {message}"
+
+custom-commands:
+  ping:
+    need-player: true
+    command: "ping %player%"
+    description: "Пинг игрока"
+    max-output-lines: 15
+
+  online:
+    need-player: false
+    command: "list"
+    description: "Онлайн игроков"
+    max-output-lines: 15
